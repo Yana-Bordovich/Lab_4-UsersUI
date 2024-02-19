@@ -13,7 +13,7 @@ import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.rememberCoroutineScope
 import com.topic2.android.notes.routing.Screen
 import com.topic2.android.notes.theme.NotesTheme
-import com.topic2.android.notes.ui.components.AppDrawer
+import com.topic2.android.notes.ui.components.components.components.AppDrawer
 import com.topic2.android.notes.ui.components.Note
 import kotlinx.coroutines.launch
 
@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 
           },
           content = {
-            Note()
           }
         )
 
