@@ -1,4 +1,4 @@
-package com.topic2.android.notes.ui.components
+package com.topic2.android.notes.ui.components.components.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -19,6 +19,7 @@ import com.topic2.android.notes.theme.NotesTheme
 import com.topic2.android.notes.routing.NotesRouter
 import com.topic2.android.notes.routing.Screen
 import com.topic2.android.notes.theme.NotesThemeSettings
+
 
 
 @Composable
@@ -187,4 +188,8 @@ fun AppDrawerPreview(){
     NotesTheme {
         AppDrawer(Screen.Notes, {})
     }
+}
+
+class AppDrawer {
+
 }
