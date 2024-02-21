@@ -1,4 +1,4 @@
-package com.topic2.android.notes.ui.components
+package com.topic2.android.notes.ui.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.foundation.layout.Box
@@ -46,3 +46,8 @@ fun NoteColor(
 fun NoteColorPreview(){
     NoteColor(color = Color.Red, size = 40.dp, border = 2.dp)
 }
+
+class NoteColor {
+
+}
+
