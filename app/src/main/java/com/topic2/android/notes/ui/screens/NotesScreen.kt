@@ -6,7 +6,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.List
-import com.topic2.android.notes.ui.components.TopAppBar
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.tooling.preview.Preview
@@ -17,7 +16,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.rememberCoroutineScope
 import com.topic2.android.notes.routing.Screen
-import com.topic2.android.notes.ui.components.components.components.AppDrawer
+import com.topic2.android.notes.ui.ui.components.components.AppDrawer
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
@@ -100,7 +99,8 @@ private fun NotesList(
     LazyColumn{
         items(count = notes.size){noteIndex ->
             val note = notes[noteIndex]
-            Note(note = note,
+            Note(
+                note = note,
                 onNoteClick = onNoteClick,
                 onNoteCheckedChange = onNoteCheckedChange
             )
