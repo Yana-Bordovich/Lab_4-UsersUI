@@ -1,4 +1,4 @@
-package com.topic2.android.notes.ui.components
+package com.topic2.android.notes.ui.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -75,4 +75,8 @@ private fun TopAppBarPreview(){
         )
 
     }
+}
+
+class TopAppBar {
+
 }
